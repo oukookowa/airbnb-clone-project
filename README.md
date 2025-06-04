@@ -267,3 +267,21 @@ Sensitive data, such as passwords and payment information, is encrypted during s
 **Payment Security:**
 
 All payment operations are securely processed using trusted third-party providers. This prevents exposure of financial details and ensures PCI-DSS compliance for transaction safety.
+
+## CI/CD Pipeline
+
+CI/CD stands for Continuous Integration and Continuous Deployment. It is a development practice that automates the integration of code changes, runs tests, builds the application, and deploys it to production or staging environments. CI/CD pipelines help detect issues early, streamline deployments, and reduce manual intervention.
+
+**Why It Matters for This Project:**
+
+For this Airbnb Clone, a CI/CD pipeline ensures that every code change, whether it's a bug fix, new feature, or configuration update—is automatically tested and deployed. This leads to faster development cycles, more reliable releases, and a consistent experience for users.
+
+**Tools Used:**
+
+GitHub Actions – Automates workflows like running tests, linting code, and deploying on push or pull requests.
+
+Docker – Containerizes the application for consistent development, testing, and production environments.
+
+(Optional) Heroku, Render, or AWS – For automated deployment to cloud environments.
+
+
