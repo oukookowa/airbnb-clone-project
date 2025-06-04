@@ -221,26 +221,26 @@ A user can leave multiple reviews for different properties (one-to-many).
 
 Each booking has one payment (one-to-one).
 
-**Feature Breakdown:**
+## Feature Breakdown
 
 This Airbnb Clone project includes several core features that replicate essential functionalities of the original platform. Each feature is designed to provide a seamless experience for both hosts and guests.
 
-User Management
+**User Management:**
 
 Users can register, log in, and manage their profiles. The system supports different roles—guests who book properties and hosts who list them—ensuring personalized access and control.
 
-Property Management
+**Property Management:**
 
 Hosts can list properties with details like title, description, location, pricing, and availability. They can also update or delete their listings, providing full control over their offerings.
 
-Booking System
+**Booking System:**
 
 Guests can browse available properties and make bookings for specific dates. The system handles booking conflicts and ensures that properties are not double-booked.
 
-Review and Rating System
+**Review and Rating System:**
 
 Guests can leave reviews and ratings after completing a stay. These reviews help future guests make informed decisions and promote accountability among hosts.
 
-Payment Integration
+**Payment Integration:**
 
 A secure payment system allows users to complete bookings through digital transactions. Payment status is tracked, and hosts can manage earnings from their listings.
