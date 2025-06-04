@@ -244,3 +244,26 @@ Guests can leave reviews and ratings after completing a stay. These reviews help
 **Payment Integration:**
 
 A secure payment system allows users to complete bookings through digital transactions. Payment status is tracked, and hosts can manage earnings from their listings.
+
+## API Security
+Securing backend APIs is critical to ensuring the safety, privacy, and reliability of the platform. The following measures are implemented to protect sensitive data and maintain user trust:
+
+**Authentication:**
+
+Authentication ensures that only registered users can access protected routes. Using token-based authentication (e.g., JWT or session tokens), the system verifies user identity before granting access to APIs. This prevents unauthorized access to personal accounts and data.
+
+**Authorization:**
+
+Authorization checks if an authenticated user has permission to perform specific actions—such as editing a property or viewing a booking. It ensures that users can only access or modify resources they own, preventing data leaks and misuse.
+
+**Rate Limiting:**
+
+Rate limiting restricts the number of requests a user or IP can make in a given time frame. This helps mitigate brute-force attacks and protects the API from abuse and server overload.
+
+**Data Encryption:**
+
+Sensitive data, such as passwords and payment information, is encrypted during storage and transmission. This ensures that even if data is intercepted or leaked, it remains unreadable to malicious actors.
+
+**Payment Security:**
+
+All payment operations are securely processed using trusted third-party providers. This prevents exposure of financial details and ensures PCI-DSS compliance for transaction safety.
