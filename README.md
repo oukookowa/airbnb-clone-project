@@ -145,3 +145,79 @@ GET /reviews/{review_id}/ - Retrieve a specific review
 PUT /reviews/{review_id}/ - Update a specific review
 
 DELETE /reviews/{review_id}/ - Delete a specific review
+
+## Database Design
+**Users:**
+
+id: Primary Key
+
+name: Full name of the user
+
+email: Unique email address (used for login)
+
+password: Hashed user password
+
+user_type: Indicates whether the user is a guest or host
+
+**Properties:**
+
+id: Primary Key
+
+owner_id: Foreign Key referencing Users.id (host)
+
+title: Name of the property
+
+description: Details about the property
+
+location: Address or coordinates
+
+**Bookings:**
+
+id: Primary Key
+
+owner_id: Foreign Key referencing Users.id (host)
+
+title: Name of the property
+
+description: Details about the property
+
+location: Address or coordinates
+
+**Reviews:**
+
+id: Primary Key
+
+user_id: Foreign Key referencing Users.id
+
+property_id: Foreign Key referencing Properties.id
+
+rating: Numeric score (e.g., 1-5)
+
+comment: Text feedback
+
+**Payments:**
+
+id: Primary Key
+
+booking_id: Foreign Key referencing Bookings.id
+
+amount: Total payment amount
+
+payment_status: e.g., "completed", "pending", "failed"
+
+payment_date: Timestamp of the payment
+
+**Entity Relationships:**
+
+A user can be both a host and a guest.
+
+A user can own multiple properties (one-to-many).
+
+A property can have many bookings (one-to-many).
+
+A booking is made by a guest for a property (many-to-one).
+
+A user can leave multiple reviews for different properties (one-to-many).
+
+Each booking has one payment (one-to-one).
+
