@@ -94,7 +94,8 @@ GraphQL API: Provides a flexible query language for retrieving and manipulating 
 ## Endpoints Overview
 REST API Endpoints
 
-Users:
+**Users:**
+
 GET /users/ - List all users
 
 POST /users/ - Create a new user
@@ -105,30 +106,42 @@ PUT /users/{user_id}/ - Update a specific user
 
 DELETE /users/{user_id}/ - Delete a specific user
 
-Properties:
+**Properties:**
 
 GET /properties/ - List all properties
+
 POST /properties/ - Create a new property
+
 GET /properties/{property_id}/ - Retrieve a specific property
+
 PUT /properties/{property_id}/ - Update a specific property
+
 DELETE /properties/{property_id}/ - Delete a specific property
 
-Bookings:
+**Bookings**:
 
 GET /bookings/ - List all bookings
+
 POST /bookings/ - Create a new booking
+
 GET /bookings/{booking_id}/ - Retrieve a specific booking
+
 PUT /bookings/{booking_id}/ - Update a specific booking
+
 DELETE /bookings/{booking_id}/ - Delete a specific booking
 
-Payments:
+**Payments:**
 
 POST /payments/ - Process a payment
 
-Reviews:
+**Reviews:**
 
 GET /reviews/ - List all reviews
+
 POST /reviews/ - Create a new review
+
 GET /reviews/{review_id}/ - Retrieve a specific review
+
 PUT /reviews/{review_id}/ - Update a specific review
+
 DELETE /reviews/{review_id}/ - Delete a specific review
