@@ -95,11 +95,14 @@ GraphQL API: Provides a flexible query language for retrieving and manipulating 
 REST API Endpoints
 
 Users:
-
 GET /users/ - List all users
+
 POST /users/ - Create a new user
+
 GET /users/{user_id}/ - Retrieve a specific user
+
 PUT /users/{user_id}/ - Update a specific user
+
 DELETE /users/{user_id}/ - Delete a specific user
 
 Properties:
